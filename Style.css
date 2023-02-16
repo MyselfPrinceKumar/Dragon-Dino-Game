@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.gameContainer {
+    background-image: url("bg.png");
+    height: 100vh;
+    width: 100vw;
+
+}
+
+body {
+    overflow: hidden;
+}
+
+.dino {
+    background-image: url(dino.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 233px;
+    height: 114px;
+    position: absolute;
+    bottom: 0;
+    left: 52px;
+}
+
+.dragon {
+    background-image: url(dragon.png);
+    height: 113px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 166px;
+    position: absolute;
+    bottom: 0px;
+    left: 44vw;
+    /* animation-name: Animation;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+#scoreCont{
+    position: relative;
+    right: -1100px;
+    top: -47px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.dragonAni{
+    animation-name: Animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.gameOver {
+    /* visibility; */
+    position: relative;
+    top: 16vh;
+    left: 29vw;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+@keyframes Animation {
+    0% {
+        /* transform: translate((800px)); */
+        left: 100vw;
+
+    }
+
+    100% {
+        /* transform: translate(-100vw); */
+        left: -10vw;
+    }
+}
+
+.AnimateDino {
+    animation-name: AnimationDino;
+    animation-duration: .6s;
+    animation-timing-function: linear;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes AnimationDino {
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 422px;
+    }
+
+    100% {
+        bottom: 0px;
+        /* transform: translate(100px); */
+    }
+}
